@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head lang="en">
+    <head>
+        <link type="text/css" rel="stylesheet" href="test.css">
+        <script src="test.js"></script>
+    </head>
+    <body>
+        <h1>I'm an external HTML file. Nice to meet you.</h1>
+
+        <!-- Test relative image -->
+        <h2>A nice image</h2>
+        <img src="potnoodle.jpg" alt="test image">
+
+        <!-- Test external CSS -->
+        <div id="test-target">
+            I should be a red box if external CSS is loaded correctly.
+        </div>
+    
+        <!-- Test inline JS -->
+        <div id="test-js">
+            <p>If you're reading this then inline JS is borked.</p>
+        </div>
+        <script>
+            var target = document.querySelector('#test-js');
+            target.innerHTML = 'Inline JS tags are working :)';
+        </script>
+    </body>
+</html>
